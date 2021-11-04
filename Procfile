@@ -1,1 +1,1 @@
-web: gunicorn random_dilbert:app
+web: gunicorn randil:app
