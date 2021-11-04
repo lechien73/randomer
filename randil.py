@@ -3,11 +3,13 @@ import json
 import os
 
 from flask import Flask
+from flask_cors import CORS
 from helpers.get_image import get_dilbert
 from helpers.random_date import random_date
 
 
 app = Flask(__name__)
+cors = CORS(app, resources={r"/api*": {"origins": "*"}})
 
 
 @app.route("/api")
