@@ -1,1 +1,1 @@
-web: gunicorn randil:app
+web: python3 randil.py
